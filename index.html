@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Cumpleaños Papá</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Arial', sans-serif;
+      background: radial-gradient(circle at center, #111, #000);
+      color: #fff;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      min-height: 100vh;
+      overflow-x: hidden;
+    }
+
+    /* Título estilo neón */
+    h1 {
+      font-size: 3rem;
+      margin: 20px;
+      color: #0ff;
+      text-shadow: 0 0 5px #0ff, 0 0 10px #0ff, 0 0 20px #0ff;
+      animation: flicker 2s infinite alternate;
+    }
+
+    @keyframes flicker {
+      0% { opacity: 1; }
+      50% { opacity: 0.8; }
+      100% { opacity: 1; }
+    }
+
+    .mensaje {
+      max-width: 600px;
+      text-align: center;
+      font-size: 1.2rem;
+      margin-bottom: 40px;
+      line-height: 1.5;
+    }
+
+    /* Carrusel infinito */
+    .slider {
+      width: 100%;
+      overflow: hidden;
+      position: relative;
+      background: rgba(0,255,255,0.1);
+      padding: 20px 0;
+    }
+
+    .slide-track {
+      display: flex;
+      width: calc(250px * 30); /* ancho = tamaño foto * número duplicado */
+      animation: scroll 40s linear infinite;
+    }
+
+    .slide {
+      width: 250px;
+      height: 180px;
+      margin: 0 10px;
+      flex-shrink: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: #000;
+      border-radius: 10px;
+      box-shadow: 0 0 10px rgba(0,255,255,0.5);
+    }
+
+    .slide img {
+      max-width: 100%;
+      max-height: 100%;
+      object-fit: contain; /* ajusta sin recortar */
+      border-radius: 10px;
+    }
+
+    @keyframes scroll {
+      0% { transform: translateX(0); }
+      100% { transform: translateX(-50%); }
+    }
+
+    @media (max-width: 600px) {
+      .slide {
+        width: 180px;
+        height: 120px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>🎂 ¡Feliz Cumpleaños Papá! 🎂</h1>
+  <div class="mensaje">
+    Papi, feliz Cumpleaños.
+    Este pequeño detalle es muestra del amor y admiración que te tenemos.
+    Por como luchas todos los dias, te como día a día te esfuerzas por tus metas.
+    Te queremos muchooo y que tengas un bonito cumpleaños❤️❤️
+    Que Dios te bendiga hoy y siempre❤️
+  </div>
+
+  <!-- Carrusel infinito -->
+  <div class="slider">
+    <div class="slide-track">
+      <!-- Fotos (duplicadas para efecto infinito) -->
+      <div class="slide"><img src="Photos-1-001/1.jpg" alt="Foto 1"></div>
+      <div class="slide"><img src="Photos-1-001/2.jpg" alt="Foto 2"></div>
+      <div class="slide"><img src="Photos-1-001/3.jpg" alt="Foto 3"></div>
+      <div class="slide"><img src="Photos-1-001/4.jpg" alt="Foto 4"></div>
+      <div class="slide"><img src="Photos-1-001/5.jpg" alt="Foto 5"></div>
+      <div class="slide"><img src="Photos-1-001/6.jpg" alt="Foto 6"></div>
+      <div class="slide"><img src="Photos-1-001/7.jpg" alt="Foto 7"></div>
+      <div class="slide"><img src="Photos-1-001/8.jpg" alt="Foto 8"></div>
+      <div class="slide"><img src="Photos-1-001/9.jpg" alt="Foto 9"></div>
+      <div class="slide"><img src="Photos-1-001/10 (2).jpg" alt="Foto 10"></div>
+      <div class="slide"><img src="Photos-1-001/11.jpg" alt="Foto 11"></div>
+      <div class="slide"><img src="Photos-1-001/12.jpg" alt="Foto 12"></div>
+      <div class="slide"><img src="Photos-1-001/13.jpg" alt="Foto 13"></div>
+      <div class="slide"><img src="Photos-1-001/14.jpg" alt="Foto 14"></div>
+      <div class="slide"><img src="Photos-1-001/15.jpg" alt="Foto 15"></div>
+      
+       <div class="slide"><img src="Photos-1-001/1.jpg" alt="Foto 1"></div>
+      <div class="slide"><img src="Photos-1-001/2.jpg" alt="Foto 2"></div>
+      <div class="slide"><img src="Photos-1-001/3.jpg" alt="Foto 3"></div>
+      <div class="slide"><img src="Photos-1-001/4.jpg" alt="Foto 4"></div>
+      <div class="slide"><img src="Photos-1-001/5.jpg" alt="Foto 5"></div>
+      <div class="slide"><img src="Photos-1-001/6.jpg" alt="Foto 6"></div>
+      <div class="slide"><img src="Photos-1-001/7.jpg" alt="Foto 7"></div>
+      <div class="slide"><img src="Photos-1-001/8.jpg" alt="Foto 8"></div>
+      <div class="slide"><img src="Photos-1-001/9.jpg" alt="Foto 9"></div>
+      <div class="slide"><img src="Photos-1-001/10 (2).jpg" alt="Foto 10"></div>
+      <div class="slide"><img src="Photos-1-001/11.jpg" alt="Foto 11"></div>
+      <div class="slide"><img src="Photos-1-001/12.jpg" alt="Foto 12"></div>
+      <div class="slide"><img src="Photos-1-001/13.jpg" alt="Foto 13"></div>
+      <div class="slide"><img src="Photos-1-001/14.jpg" alt="Foto 14"></div>
+      <div class="slide"><img src="Photos-1-001/15.jpg" alt="Foto 15"></div>
+    </div>
+  </div>
+  <div class="footer-text">
+  "TE AMAMOS MUCHOOO!!! ❤️"
+</div>
+
+<style>
+.footer-text {
+  margin-top: 40px;
+  font-size: 1.5rem;
+  color: #0ff;
+  text-shadow: 0 0 5px #0ff, 0 0 10px #0ff;
+  animation: glow 2s ease-in-out infinite alternate;
+}
+
+@keyframes glow {
+  from { text-shadow: 0 0 5px #0ff; }
+  to { text-shadow: 0 0 20px #0ff, 0 0 40px #0ff; }
+}
+</style>
+</body>
+</html>
